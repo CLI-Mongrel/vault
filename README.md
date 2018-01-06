@@ -29,6 +29,7 @@ This example shows how the secret is displayed (in this case "1234567 / 1234567"
 ```
 mon@expedit ~/vault $ ./vault.py load bankinfo
   0 Moneybags National Bank (acct/routing)
+  1 Never Gonna Guess Me
 Show which line?: 0
   key[masked]: 
    seconds to show (0 forever): 5
@@ -50,6 +51,7 @@ The secret entries are stored in plain text as a label and Base64-encoded pair. 
 Moneybags National Bank (acct/routing):ABz1kFrM3eyHcmMc0f4YaOLMSgTGiARaIys8aB2hxjH2HvnUmIy/N4A5YBT133FF
 Never Gonna Guess Me:9Q4Tl2z3X00TB9LLk3eqBPi3hJ5Kpx5aS43v0jI4Zx9LGgquL8cylKaeZJfo1/Rz
 ```
+I don't need to tell you why plaintext storage is great.
 
 # Bounty
 The entry "Never Gonna Guess Me" in the example above is left as a challenge to all takers to try and decrypt. I'm prepared to offer a laughably small bounty of $10 to the first person that can crack that entry.
