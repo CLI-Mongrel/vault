@@ -46,7 +46,7 @@ Bye
 
 # Plaintext File Storage
 
-The secret entries are stored in plain text as a label and Base64-encoded pair. The encryption is 128-bit AES in CBC mode, with RIPEMD used to expand the secret to the 16-byte needed for the blocksize. The initialization vector is randomly-generated for each message, so even if the same secret is encrypted several times with the same key, the ciphertext will differ dramatically.
+The secret entries are stored in plain text as a label and Base64-encoded pair. The encryption is 128-bit AES in CBC mode, with RIPEMD 160 used to expand the key to the 16-byte needed for the blocksize. The initialization vector is randomly-generated for each message, so even if the same secret is encrypted several times with the same key, the ciphertext will differ dramatically.
 ```
 Moneybags National Bank (acct/routing):ABz1kFrM3eyHcmMc0f4YaOLMSgTGiARaIys8aB2hxjH2HvnUmIy/N4A5YBT133FF
 Never Gonna Guess Me:9Q4Tl2z3X00TB9LLk3eqBPi3hJ5Kpx5aS43v0jI4Zx9LGgquL8cylKaeZJfo1/Rz
